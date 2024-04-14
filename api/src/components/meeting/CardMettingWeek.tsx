@@ -9,7 +9,7 @@ interface ItemReuniaoProps {
     tipoReuniao: 'Presencial' | 'Online' | 'Hibrido';
 }
 
-const ItemReuniao: React.FC<ItemReuniaoProps> = ({ nome, inicio, termino, tipoReuniao }) => {
+const CardMettingDay: React.FC<ItemReuniaoProps> = ({ nome, inicio, termino, tipoReuniao }) => {
     // Definindo cores para cada tipo de reunião
     const getColorByTipoReuniao = (tipo: 'Presencial' | 'Online' | 'Hibrido') => {
         switch (tipo) {
@@ -76,4 +76,4 @@ const ItemReuniao: React.FC<ItemReuniaoProps> = ({ nome, inicio, termino, tipoRe
     );
 };
 
-export default ItemReuniao;
+export default CardMettingWeek;

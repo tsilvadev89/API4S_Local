@@ -9,7 +9,7 @@ interface SelecionarPeriodoProps {
 }
 
 const SelecionarPeriodo: React.FC<SelecionarPeriodoProps> = ({ onPeriodoChange }) => {
-  const [selectedPeriod, setSelectedPeriod] = useState<Periodo>('Dia');
+  const [selectedPeriod, setSelectedPeriod] = useState<Periodo>('Mes');
 
   const handleButtonClick = (period: Periodo) => {
     setSelectedPeriod(period);
